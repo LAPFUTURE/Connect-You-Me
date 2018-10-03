@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view class="indexcontainer">
+  <view class="top" bindtap="getquote">
+    <text>每日一句</text>
+    <text>[{{ quote.assign_date }}]</text>
+    <text class="textindent">{{ quote.content }}<text style="float: right;">--{{ quote.author }}</text></text>
+  </view>
+
+  <view class="items" wx:for = "{{ dates }}" wx:key="{{ index }}">
+    <view class="item" data-dateid="{{ item.dateId }}" bindtap="showdate" longpress="lpress">
+      <p data-dateid="{{ item.dateId }}" >{{ item.title }}</p>
+      <p class="star" data-dateid="{{ item.dateId }}" bindtap="add">★{{ item.stars }}</p>
+      <p class="ymd" data-dateid="{{ item.dateId }}">{{ item.ymd }}</p>
+      <p class="dates" data-dateid="{{ item.dateId }}">{{ item.date }}</p>
+    </view>
+  </view>
+
+</view>

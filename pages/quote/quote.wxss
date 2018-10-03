@@ -1,0 +1,15 @@
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.translation{
+  background:rgb(230,230,230);
+  display:flex;
+  flex-direction: column;
+  border-radius: 8px;
+  margin-top:40rpx;
+}
+.log-item {
+  margin: 20rpx;
+}

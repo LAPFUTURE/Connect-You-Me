@@ -1,0 +1,41 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/quote/quote",
+    "pages/write/write",
+    "pages/usercenter/usercenter",
+    "pages/date/date"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Connect You Me",
+    "navigationBarTextStyle":"black",
+    "navigationBarBackgroundColor":"#FFFFcc"
+  },
+  "tabBar":{
+    "color":"#000",
+    "selectedColor":"rgb(44,251,54)",
+    "backgroundColor":"#FFFFcc",
+    "list":[
+      {
+      "pagePath":"pages/index/index",
+      "text":"Home",
+      "iconPath":"images/home.png",
+      "selectedIconPath":"images/home_selected.png"
+      },
+      {
+        "pagePath":"pages/write/write",
+        "text":"Write",
+        "iconPath":"images/write.png",
+        "selectedIconPath":"images/write_selected.png"
+      },
+      {
+        "pagePath":"pages/usercenter/usercenter",
+        "text":"Me",
+        "iconPath":"images/user.png",
+        "selectedIconPath":"images/user_selected.png"
+      }
+  ]
+  }
+}

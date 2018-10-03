@@ -1,0 +1,9 @@
+<!--logs.wxml-->
+<view class="container log-list" style="background: rgb(247,247,247)">
+  <image src="{{ quote.origin_img_urls[1] }}" style="width: 280rpx;margin:0 auto;"></image>
+  <view class="translation">
+    <text class="log-item">{{ quote.content }}</text>
+    <text class="log-item">--{{ quote.author }}</text>
+    <text class="log-item">{{ quote.translation }}</text>
+  </view>
+</view>

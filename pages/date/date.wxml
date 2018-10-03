@@ -1,0 +1,5 @@
+<view style="display: flex;flex-wrap: wrap;justify-content: center;">
+    <text class="title">{{ date.title }}</text>
+    <text class="content">{{ date.date }}</text>
+    <text>★</text>
+</view>
