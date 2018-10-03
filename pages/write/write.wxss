@@ -15,7 +15,9 @@
 .writecontent{
     background: rgb(247,247,247);
     border: 1px solid rgb(210,210,210);
-    width: 480rpx;height:540rpx;
+    width: 480rpx;
+    height:540rpx;
+    overflow-y: scroll;
     border-radius: 8px;
     padding:0 20rpx;
     margin-top: 30rpx;
@@ -23,6 +25,9 @@
 }
 .margintop{
     margin-top: 30rpx;
+}
+.onlyme{
+    margin:0 0rpx 0 165rpx;
 }
 .hoverbefore{
     border:1px solid rgb(210,210,210);

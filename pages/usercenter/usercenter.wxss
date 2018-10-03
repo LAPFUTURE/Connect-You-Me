@@ -33,3 +33,23 @@
   .usermotto {
     margin-top: 200px;
   }
+  .usershow{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .useritem{
+    text-align:center;
+    width: 350rpx;
+    margin:10rpx auto;
+    padding:20rpx;
+    border:1px solid rgb(194,194,194);
+    box-shadow:1px 1px 5px rgb(240,240,240);
+    background:rgb(247,247,247);
+    border-radius: 8px;
+  }
+  .icon{
+    float:right;
+    width: 40rpx;
+    height: 40rpx;
+  }

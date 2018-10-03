@@ -1,7 +1,8 @@
 .log-list {
   display: flex;
   flex-direction: column;
-  padding: 40rpx;
+  padding: 30rpx;
+  background: rgb(247,247,247);
 }
 .translation{
   background:rgb(230,230,230);
@@ -10,6 +11,22 @@
   border-radius: 8px;
   margin-top:40rpx;
 }
+.hover-translation{
+  background:rgb(210,210,210);
+  box-shadow:5px 5px 5px 5px rgb(235,235,235); 
+
+}
 .log-item {
   margin: 20rpx;
+}
+.textindent{
+  text-indent: 60rpx;
+}
+.authorright{
+  margin-left:300rpx;
+}
+.getin{
+  width: 80rpx;
+  height: 80rpx;
+  margin: 10rpx auto;
 }

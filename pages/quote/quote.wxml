@@ -1,9 +1,10 @@
 <!--logs.wxml-->
-<view class="container log-list" style="background: rgb(247,247,247)">
+<view class="container log-list">
   <image src="{{ quote.origin_img_urls[1] }}" style="width: 280rpx;margin:0 auto;"></image>
-  <view class="translation">
-    <text class="log-item">{{ quote.content }}</text>
-    <text class="log-item">--{{ quote.author }}</text>
-    <text class="log-item">{{ quote.translation }}</text>
+  <view class="translation" hover-class="hover-translation" hover-stay-time="200">
+    <image src="../../images/getin.png" class="getin"></image>
+    <text class="log-item textindent">{{ quote.content }}</text>
+    <text class="authorright">--{{ quote.author }}</text>
+    <text class="log-item textindent">{{ quote.translation }}</text>
   </view>
 </view>

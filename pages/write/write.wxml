@@ -1,5 +1,6 @@
 <view class="writecontainer">
     <text>Title:</text><input bindinput="bindtitle" class="writetitle"/>
     <text class="margintop">Content:</text><textarea bindinput="bindcontent" class="writecontent"></textarea>
+    <switch class="onlyme" type="checkbox" bindchange="onlyme">仅自己可见</switch>
     <button bindtap="submit" class="hoverbefore" size="mini" hover-class="hoverclass">submit</button>
 </view>

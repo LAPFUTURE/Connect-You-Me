@@ -12,11 +12,16 @@
     text-indent: 60rpx;
     margin:15rpx auto;
     padding:15rpx 15px;
-    min-height:660rpx;
+    height:660rpx;
+    overflow-y: scroll;
     width: 660rpx;
     text-align: center;
     border-radius: 8px;
     border:1px solid rgb(194,194,194);
     box-shadow:1px 1px 5px rgb(240,240,240);
     background:rgb(247,247,247);
+}
+.dateimage{
+    width: 40rpx;
+    height:40rpx;
 }

@@ -42,7 +42,6 @@ Page({
         userInfo: app.globalData.userInfo,
         hasUserInfo: true,
       });
-      console.log("1:",app.globalData.userInfo);
     } else if (this.data.canIUse){
       // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
       // 所以此处加入 callback 以防止这种情况
@@ -62,7 +61,6 @@ Page({
             userInfo: res.userInfo,
             hasUserInfo: true
           });
-          console.log("3:",res.userInfo);
         }
       })
     }
@@ -103,7 +101,6 @@ Page({
       userInfo: e.detail.userInfo,
       hasUserInfo: true
     });
-    console.log(this.data.userInfo);
   },
   onReachBottom:function(){//距离底部刷新
     let that = this;
@@ -126,9 +123,9 @@ Page({
            title:"我也是有底线的",
            success:function(res){
              if(res.confirm){
-               console.log("点击了确定");
+              
              }else{
-               console.log("点击了取消");
+              
              }
            }
          })
@@ -136,7 +133,7 @@ Page({
         
       },
     });
-    // console.log(this.data.dates);
+   
   },
   getquote:()=>{//点击每日一句
     wx.navigateTo({
@@ -145,16 +142,10 @@ Page({
   },
   showdate:(e)=>{//点击日记详情
     let dateid  = e.target.dataset.dateid;
-    console.log(dateid);
+    console.log("dataId:",dateid);
     wx.navigateTo({
       url:"/pages/date/date?dateid="+dateid
     })
-  },
-  lpress:(e)=>{
-     console.log(e);
-     wx.showLoading({
-       title:"loading"
-     });
   },
   add:function(){
     this.setData({

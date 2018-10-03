@@ -10,3 +10,10 @@ page{color:rgb(141,141,141);}
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+.image{
+  height: 40rpx;
+  width: 40rpx;
+}
+.floatright{
+  float: right;
+}

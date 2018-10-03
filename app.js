@@ -54,7 +54,6 @@ App({
         }
       }
     })
-    console.timeEnd("app.js");
   },
   globalData: {
     url:"http://127.0.0.1/DateWithYou_back/public/index.php/admin/Wxback/",

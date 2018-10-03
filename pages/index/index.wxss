@@ -9,7 +9,7 @@
   box-sizing: border-box;
 } 
 .top{
-  padding: 5rpx 20rpx;
+  padding: 10rpx 20rpx;
   font-size: 14px;
   border-radius: 10px;
   display:flex;
@@ -43,9 +43,14 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
+.hover-item{
+  background:rgb(235,235,235);
+  box-shadow:5px 5px 5px rgb(210,210,210);
+}
 .star{
   font-size: 12px;
-  line-height: 25px;
+  line-height: 20px;
+  font-size: 28rpx;
 }
 .ymd{
   font-size: 12px;

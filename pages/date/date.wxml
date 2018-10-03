@@ -1,5 +1,27 @@
 <view style="display: flex;flex-wrap: wrap;justify-content: center;">
     <text class="title">{{ date.title }}</text>
     <text class="content">{{ date.date }}</text>
-    <text>★</text>
 </view>
+<view style="display: flex;justify-content: space-around;">
+    <block wx:if="{{ star_being }}">
+        <image src="/images/star.png" class="dateimage" bindtap="click_star"></image>
+    </block>
+    <block wx:else>
+        <image src="/images/star_selected.png" class="dateimage" bindtap="click_star"></image>
+    </block>
+
+    <block wx:if="{{ collect_being }}">
+        <image wx:if="false" src="/images/collect.png" class="dateimage" bindtap="click_collect"></image>
+    </block>
+    <block wx:else>
+        <image src="/images/collect_selected.png" class="dateimage" bindtap="click_collect"></image>
+    </block>
+    
+    <image src="/images/comment.png" class="dateimage"></image>
+    <!-- <block wx:if="{{ comment_being }}">
+        
+    </block>
+    <block wx:else>
+        <image src="" class="dateimage"></image>
+    </block> -->
+ </view>

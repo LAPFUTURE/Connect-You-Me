@@ -1,5 +1,5 @@
 <view class="usercenter">
-    <image class="img" src='../../images/fy.png'/>
+    <image class="img" src='/images/fy.png'/>
     <view class="userinfo">
       <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
       <block>
@@ -7,4 +7,12 @@
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
       </block>
     </view>
+  </view>
+
+  <view class="usershow">
+    <view class="useritem">My Date<image src="/images/date.png" class="icon"></image></view>
+    <view class="useritem">My Collections<image src="/images/collect_selected.png" class="icon"></image></view>
+    <view class="useritem">My Stars<image src="/images/star_selected.png" class="icon"></image></view>
+    <view class="useritem">My Comments<image src="/images/comment_selected.png" class="icon"></image></view>
+    
   </view>
