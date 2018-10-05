@@ -1,0 +1,4 @@
+<view wx:for="{{ searchResult }}" wx:key="{{ index }}">
+    {{ item.title }}
+    {{ item.date }}
+</view>

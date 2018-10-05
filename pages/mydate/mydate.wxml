@@ -1,0 +1,22 @@
+<view class="bgcolor">
+    <view class="search-container">
+        <icon class="icon" type="search" color="rgb(255,255,255)"></icon>
+        <input class="search-input" placeholder="请输入日期或标题" placeholder-class="search-input-placeholder"/>
+        <button class="search-button" plain="plain" style="border:1px solid rgb(240,240,240); color:rgb(255,255,255);">搜索</button>
+    </view>
+    <view class="date-items" wx:for="{{ myDate }}" wx:key="{{ index }}">
+        <view class="date-item" hover-stay-time="200">
+            <view class="fontsize16">{{ item.title }}</view>
+            <view class="fontsize16"><image class="dateimage" src="/images/star.png" bindtap="click_star"></image>{{ item.stars }}</view>
+            <view class="fontsize16">{{ item.ymd }}</view>
+            <view class="mydate">{{ item.date }}</view>
+        </view>
+        <view style="display: flex;justify-content: flex-end;">
+            <!-- <image class="bottomimage" src="/images/collect_selected.png"></image>
+            <image class="bottomimage" src="/images/star_selected.png"></image> -->
+            <image class="bottomimage" src="/images/comment_selected.png"></image>
+            <image class="bottomimage" src="/images/write_selected.png"></image>
+            <image class="bottomimage" src="/images/delete.png"></image>
+        </view>
+    </view>
+</view>

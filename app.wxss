@@ -1,6 +1,9 @@
 /* @import 'weui.wxss'; */
 /**app.wxss**/
 page{color:rgb(141,141,141);}
+.bgcolor{
+  background-color:rgb(247,247,247);
+}
 .container {
   height: 100%;
   display: flex;
@@ -17,3 +20,67 @@ page{color:rgb(141,141,141);}
 .floatright{
   float: right;
 }
+.fontsize16{
+  font-size: 16px;
+}
+
+.search-container{
+  background-color:#33cc99;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  padding:20rpx;
+  position:fixed;
+  top:0rpx;
+  width: 100%;
+}
+.icon{
+  position: absolute;
+  left:46rpx;
+  top:37rpx;
+}
+.search-input{
+  border:1px solid rgb(240,240,240);
+  width: 400rpx;
+  padding:10rpx 20rpx 10rpx 75rpx;
+  border-radius:50rpx;
+  color:rgb(240,240,240);
+}
+.search-input-placeholder{
+  text-align:center;
+  color:rgb(255,255,255);
+}
+.search-button{
+  width:160rpx;
+  height: 75rpx;
+  padding: 0;
+  line-height: 75rpx;
+  border-radius: 50rpx;
+}
+.clickbutton{
+  border:1px solid rgb(190,190,190) !important;
+}
+
+.blur {	
+  filter: url(blur.svg#blur); /* FireFox, Chrome, Opera */
+  -webkit-filter: blur(10px); /* Chrome, Opera */
+     -moz-filter: blur(10px);
+      -ms-filter: blur(10px);    
+          filter: blur(10px);
+  filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false); /* IE6~IE9 */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

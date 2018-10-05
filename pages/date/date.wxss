@@ -21,7 +21,12 @@
     box-shadow:1px 1px 5px rgb(240,240,240);
     background:rgb(247,247,247);
 }
+.imagescontainer{
+    display: flex;
+    justify-content: flex-end;
+}
 .dateimage{
+    margin:0 30rpx;
     width: 40rpx;
     height:40rpx;
 }

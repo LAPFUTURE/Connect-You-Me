@@ -1,0 +1,41 @@
+.date-items{
+    margin:0 auto;
+    border:1px solid rgb(194,194,194);
+    box-shadow:1px 1px 5px rgb(240,240,240);
+    background:rgb(247,247,247);
+    height:250rpx;
+    width: 700rpx;
+    border-radius:8px;
+    margin-top: 125rpx;
+}
+.date-item{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    overflow: hidden;
+    justify-content: space-between;
+    padding-left: 10rpx;
+    padding-right: 10rpx;
+    align-content: space-around;
+}
+.date-item-hover{
+    background:rgb(230,230,230);
+}
+.dateimage{
+    width: 28rpx;
+    height: 28rpx;
+}
+.bottomimage{
+    width: 35rpx;
+    height: 35rpx;
+    margin: 10rpx 60rpx;
+}
+.mydate{
+    flex-basis: 650rpx;
+    height: 210rpx;
+    overflow-y: scroll;
+    padding-right:30rpx;
+    text-indent: 40rpx;
+}
+
+

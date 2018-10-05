@@ -9,11 +9,12 @@
   box-sizing: border-box;
 } 
 .top{
+  margin-top: 115rpx;
   padding: 10rpx 20rpx;
   font-size: 14px;
   border-radius: 10px;
   display:flex;
-  width: 680rpx;
+  width: 680rpx; 
   border:1px solid#cccccc; 
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -55,7 +56,7 @@
 .ymd{
   font-size: 12px;
   line-height: 25px;
-  float: right;
+  /* float: right; */
 }
 .dates{
   flex-basis: 550rpx;
@@ -87,4 +88,7 @@
 
 .usermotto {
   margin-top: 200px;
+}
+.dateimage{
+  width: 28rpx;height: 28rpx;
 }

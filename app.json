@@ -4,12 +4,15 @@
     "pages/quote/quote",
     "pages/write/write",
     "pages/usercenter/usercenter",
-    "pages/date/date"
+    "pages/date/date",
+    "pages/mydate/mydate",
+    "pages/searchresult/searchresult",
+    "pages/mycollection/mycollection"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Connect You Me",
+    "navigationBarTitleText": "ConnectYouMe",
     "navigationBarTextStyle":"black",
     "navigationBarBackgroundColor":"#FFFFcc"
   },

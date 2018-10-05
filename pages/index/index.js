@@ -11,6 +11,7 @@ Page({
     dates:[],
     page:1,
     star:'',
+    dateOrTitle:'',
   },
   //事件处理函数
   onLoad: function () {
@@ -82,7 +83,7 @@ Page({
               avatarUrl:userInfo.avatarUrl,
               country:userInfo.country
             },
-            success:function(res){
+            success:function(res){ 
               // if(res.data.status != 1){
               //     wx.showModal({
               //       title:"用户入库失败"
@@ -133,7 +134,55 @@ Page({
         
       },
     });
-   
+  },
+  dateortitle:function(e){
+    this.setData({
+      dateOrTitle:e.detail.value
+    });
+  },
+  search:function(){
+    if(this.data.dateOrTitle){
+      wx.showLoading({
+        title:"加载中!"
+      });
+      wx.request({
+        url:app.globalData.url + "search",
+        method:"post",
+        header:{'content-type':"application/x-www-form-urlencoded"},
+        data:{
+          dateOrTitle:this.data.dateOrTitle
+        },
+        success:function(res){
+          if(res.data.status == 1){
+            console.log(res.data.data);
+            wx.setStorageSync("searchResult",res.data.data);
+            wx.hideLoading();
+            wx.navigateTo({
+              "url":'/pages/searchresult/searchresult'
+            });
+          }else{
+            wx.hideLoading();
+            wx.showToast({
+              title:"暂无资源",
+              icon:"none"
+            });
+          }
+        },
+        fail:function(){
+          wx.hideLoading();
+          wx.showToast({
+            title:"服务器繁忙，请稍后再试",
+            icon:"none"
+          });
+        }
+      });
+    }else{
+      wx.showToast({
+        title:"内容不能为空!",
+        icon:"none"
+      })
+    }
+    
   },
   getquote:()=>{//点击每日一句
     wx.navigateTo({

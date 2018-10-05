@@ -48,7 +48,7 @@
     background:rgb(247,247,247);
     border-radius: 8px;
   }
-  .icon{
+  .icons{
     float:right;
     width: 40rpx;
     height: 40rpx;

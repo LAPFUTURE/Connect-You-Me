@@ -2,7 +2,7 @@
     <text class="title">{{ date.title }}</text>
     <text class="content">{{ date.date }}</text>
 </view>
-<view style="display: flex;justify-content: space-around;">
+<view class="imagescontainer">
     <block wx:if="{{ star_being }}">
         <image src="/images/star.png" class="dateimage" bindtap="click_star"></image>
     </block>

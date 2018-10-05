@@ -1,6 +1,9 @@
-<!--logs.wxml-->
+<!-- <image src="{{ quote.origin_img_urls[1] }}"></image> -->
+<view style="width: 100%;height:600rpx;background-color: rgb(200,200,200);background-image: url('{{ quote.origin_img_urls[0] }}');background-size: 100%;background-position: center center;" class="blur">
+    
+</view>
 <view class="container log-list">
-  <image src="{{ quote.origin_img_urls[1] }}" style="width: 280rpx;margin:0 auto;"></image>
+    <image src="{{ quote.origin_img_urls[0] }}" style="width: 280rpx;position: absolute;top: 4%;margin: auto auto;border-radius: 5px;"></image>
   <view class="translation" hover-class="hover-translation" hover-stay-time="200">
     <image src="../../images/getin.png" class="getin"></image>
     <text class="log-item textindent">{{ quote.content }}</text>
