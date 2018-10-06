@@ -1,10 +1,11 @@
 Page({
     data:{
-
+       myCollection:''
     },
     onShow:function(){
-        let a = wx.getStorageSync("myCollection");
-                // wx.getStorageSync("myDate")
-        console.log(a);
+        this.setData({
+           myCollection:wx.getStorageSync("myCollection")
+        });
+        console.log("mycollection:",this.data.myCollection);
     }
 })
