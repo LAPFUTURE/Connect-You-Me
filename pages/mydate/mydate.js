@@ -24,12 +24,22 @@ Page({
               datePage:this.data.datePage
             },
             success:function(res){
-                that.setData({
+                if(res.data.status == 1){
+                  that.setData({
                     myDate:that.data.myDate.concat(res.data.dates)  
-                });
-                wx.hideLoading();
+                  });
+                  wx.hideLoading();
+                }else{
+                  wx.showToast({
+                    title:"我也是有底线的!"
+                  });
+                  wx.hideLoading();
+                }
             }
         })
-
+    },
+    
+    deleteMyDate:function(e){
+        console.log(e.detail);
     }
 })

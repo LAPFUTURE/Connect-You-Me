@@ -56,12 +56,27 @@ Page({
         dataPage:1
       },
       success:function(res){
-        console.log(res.data.dates);
-        wx.setStorageSync("myCollection",res.data.dates);
-        wx.hideLoading();
-        wx.navigateTo({
-          url:"/pages/mycollection/mycollection",
-        });
+        if(res.data.status == 1){
+          wx.setStorageSync("myCollection",res.data.dates);
+          wx.hideLoading();
+          wx.navigateTo({
+            url:"/pages/mycollection/mycollection",
+          });
+        }else{//"status==0",表示无收藏
+          wx.hideLoading();
+          wx.showModal({
+            title:"你的收藏空空如也,是否去收藏?",
+            icon:"none",
+            success:function(res){
+              if(res.confirm){
+                wx.switchTab({
+                  url:"/pages/index/index",
+                });
+              }
+            }
+          })
+          
+        }
       }
     });
  
