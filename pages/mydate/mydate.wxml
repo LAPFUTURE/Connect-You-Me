@@ -12,17 +12,9 @@
             <view class="mydate">{{ item.date }}</view>
         </view>
         <view style="display: flex;justify-content: flex-end;">
-            <!-- <image class="bottomimage" src="/images/collect_selected.png"></image>
-            <image class="bottomimage" src="/images/star_selected.png"></image> -->
-            <view data-openId="{{ item.openId }}" bindtap="commentMyDate">
-              <image   class="bottomimage" src="/images/comment_selected.png"></image>
-            </view>
-            <view data-openId="{{ item.openId }}" bindtap="writeMyDate">
-              <image data-openId="{{ item.openId }}"  class="bottomimage" src="/images/write_selected.png"></image>
-            </view>
-            <view data-openId="{{ item.openId }}" bindtap="deleteMyDate">
-              <image data-openId="{{ item.openId }}"  class="bottomimage" src="/images/delete.png"></image>
-            </view>
+              <image data-dateid="{{ item.dateId }}" bindtap="commentMyDate" class="bottomimage" src="/images/comment_selected.png"></image>
+              <image data-dateid="{{ item.dateId }}" bindtap="writeMyDate"   class="bottomimage" src="/images/write_selected.png"></image>
+              <image data-dateid="{{ item.dateId }}" bindtap="deleteMyDate"   class="bottomimage" src="/images/delete.png"></image>
         </view>
     </view>
 </view>
