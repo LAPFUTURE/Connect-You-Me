@@ -43,8 +43,6 @@ Page({
     },  
     
     deleteMyDate:function(e){
-        // console.log(app.globalData.openId);
-        // console.log(this.data.openId);
         let that = this;
         let dateId = e.currentTarget.dataset.dateid;
         wx.request({
@@ -56,17 +54,16 @@ Page({
             dateId:dateId
           },
           success:function(res){ 
-            // console.log("myDate:",that.data.myDate);
             let status = res.data.status;
             if(status == 1){
               let length = that.data.myDate.length;
               let arr = that.data.myDate;
               for(let i = 0; i < length; i++){
-                console.log("arr[i]:",arr[i].dateId);
-                console.log("i:",i);
                 if(arr[i].dateId == dateId){
-                  console.log("找到了");
-                 arr.splice(i,1);
+                  arr.splice(i,1);
+                  that.setData({
+                    myDate:that.data.myDate
+                  });
                  break;
                 }
               }
@@ -82,7 +79,12 @@ Page({
                 title:"参数错误"
               });
             }
-
+          },
+          fail:function(){
+            wx.showToast({
+              title:"删除失败,请重试!",
+              icon:"none"
+            })
           }
         });
     }
