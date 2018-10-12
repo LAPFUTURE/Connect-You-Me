@@ -75,10 +75,14 @@ Page({
               }
             }
           })
-          
         }
       }
     });
- 
+  },
+  mycomment:function(){
+    wx.showLoading({
+      title:"加载中"
+    });
+    
   }
 })
