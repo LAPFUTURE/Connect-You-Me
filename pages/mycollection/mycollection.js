@@ -6,6 +6,6 @@ Page({
         this.setData({
            myCollection:wx.getStorageSync("myCollection")
         });
-        console.log(this.data.myCollection);
+       
     }
 })

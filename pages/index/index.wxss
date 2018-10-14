@@ -14,7 +14,8 @@
   font-size: 14px;
   border-radius: 10px;
   display:flex;
-  width: 680rpx; 
+  width: 680rpx;
+  min-height: 125rpx;
   border:1px solid#cccccc; 
   justify-content: flex-start;
   flex-wrap: wrap;

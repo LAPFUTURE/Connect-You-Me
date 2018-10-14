@@ -6,7 +6,7 @@
     height:250rpx;
     width: 700rpx;
     border-radius:8px;
-    margin-top: 125rpx;
+    margin-top: 75rpx;
 }
 .date-item{
     display: flex;

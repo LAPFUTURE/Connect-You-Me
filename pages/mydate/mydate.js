@@ -87,5 +87,11 @@ Page({
             })
           }
         });
+    },
+    writeMyDate:function(e){
+      let dateId = e.currentTarget.dataset.dateid;
+      wx.navigateTo({
+        url:"/pages/changemydate/changemydate?dateId="+dateId
+      })
     }
 })

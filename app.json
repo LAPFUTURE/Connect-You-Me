@@ -6,6 +6,7 @@
     "pages/usercenter/usercenter",
     "pages/date/date",
     "pages/mydate/mydate",
+    "pages/changemydate/changemydate",
     "pages/searchresult/searchresult",
     "pages/mycollection/mycollection"
   ],

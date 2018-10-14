@@ -23,7 +23,9 @@ page{color:rgb(141,141,141);}
 .fontsize16{
   font-size: 16px;
 }
-
+.search-bottom{
+  margin-top: 135rpx;
+}
 .search-container{
   background-color:#33cc99;
   display: flex;
