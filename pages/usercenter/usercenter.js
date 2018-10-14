@@ -1,6 +1,5 @@
 const app = getApp();
-
-Page({
+let obj = {
   data: {
     openId:'',
     url:app.globalData.url,
@@ -15,7 +14,7 @@ Page({
        openId:app.globalData.openId
     });
   },
-  getUserInfo: (e)=>{
+  getUserInfo: function(e){
     app.globalData.userInfo = e.detail.userInfo;
     this.setData({
       userInfo: e.detail.userInfo,
@@ -85,4 +84,5 @@ Page({
     });
     
   }
-})
+}
+Page(obj);

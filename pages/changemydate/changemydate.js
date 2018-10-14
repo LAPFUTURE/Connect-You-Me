@@ -32,7 +32,7 @@ Page({
 
     bindcontent:function(e){
         this.setData({
-            content:e.detail.value
+            date:e.detail.value
         });
     },
     
@@ -40,7 +40,6 @@ Page({
         this.setData({
             onlyme:e.detail.value
         })
-       console.log(this.data.onlyme);
     },
     
     submit:function(){
@@ -56,7 +55,6 @@ Page({
                 onlyme:this.data.onlyme
             },
             success:function(res){
-                // console.log(res.data);
                 if(res.data.status == 1){
                     console.log(res.data);
                     wx.hideLoading();
