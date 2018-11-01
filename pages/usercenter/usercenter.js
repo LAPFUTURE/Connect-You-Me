@@ -1,5 +1,6 @@
 const app = getApp();
-let obj = {
+// console.log("这个this就是后面箭头函数绑定的undefined，所以不能直接用箭头函数:",this);
+let page = {
   data: {
     openId:'',
     url:app.globalData.url,
@@ -84,5 +85,5 @@ let obj = {
     });
     
   }
-}
-Page(obj);
+};
+Page(page);

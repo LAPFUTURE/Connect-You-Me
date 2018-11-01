@@ -1,7 +1,8 @@
 <view class="usercenter">
     <image class="img" src='/images/fy.png'/>
     <view class="userinfo">
-      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" plain="plain"> 登录 </button>
+      <button wx:if="true" open-type="getUserInfo" bindgetuserinfo="getUserInfo" plain="plain"> 登录 </button>
+      <!-- {{!hasUserInfo && canIUse}} -->
       <block>
         <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
         <text class="userinfo-nickname">{{userInfo.nickName}}</text>
