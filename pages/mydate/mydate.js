@@ -18,12 +18,12 @@ Page({
         });
         let that = this;
         wx.request({
-            url:this.data.url + "mydate",
+            url:that.data.url + "mydate",
             method:"post",
             header:{"content-type":"application/x-www-form-urlencoded"},
             data:{
-              openId:this.data.openId,
-              datePage:this.data.datePage
+              openId:that.data.openId,
+              datePage:that.data.datePage
             },
             success:function(res){
                 if(res.data.status == 1){

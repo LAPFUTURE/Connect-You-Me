@@ -26,8 +26,9 @@ let page = {
     wx.showLoading({
       title:"加载中"
     });
+      console.log(this.data.url);
     wx.request({
-      url:this.data.url+"mydate",
+      url: this.data.url +"mydate",
       method:"post",
       header: {'content-type': 'application/x-www-form-urlencoded'},
       data:{

@@ -57,8 +57,8 @@ App({
   },
   globalData: {
     // url:"http://106.14.199.207/index.php/admin/Wxback/",//线上
-    // url:"http://connectyoume.top/index.php/admin/Wxback/",//线上域名
-    url:"http://127.0.0.1/ConnectYouMe_back/public/index.php/admin/Wxback/",//本地
+      url: "http://api.connectyoume.top/DateWithYou_back/public/index.php/admin/Wxback/",//线上域名http://api.connectyoume.top/DateWithYou_back/public/index.php/admin/Wxback/askquote
+    // url:"http://127.0.0.1/ConnectYouMe_back/public/index.php/admin/Wxback/",//本地
     userInfo: null,
     hasUserInfo:false,
     openId:'',
